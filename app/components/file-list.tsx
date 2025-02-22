@@ -40,7 +40,7 @@ export default function FileList({ groupedFiles }: FileListProps) {
       toastId = toast.loading("Preparing download...");
 
       // Trigger download
-      const response = await fetch(`http://localhost:3000/file/download`, {
+      const response = await fetch(`https://spck.ducvu.name.vn/file/download`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
