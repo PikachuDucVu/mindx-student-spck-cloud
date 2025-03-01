@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+  min-height: 100vh;
+  height: -moz-available;
+  height: -webkit-fill-available;
+  height: 100dvh;
+}
+
+
+
+#root {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.pit {
+  padding-top: var(--inset-top);
+  padding-bottom: var(--inset-bottom);
+}
+
+@keyframes translate-right-6 {
+  0% {
+    transform: translateX(-125%);
+  }
+
+  100% {
+    transform: translateX(350%);
+  }
+}
